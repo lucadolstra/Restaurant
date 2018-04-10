@@ -12,7 +12,7 @@ public class App
 
     public static void main( String[] args )
     {
-        Ingredient listingredients = new Ingredient(1, "pasta");
+        Ingredient listingredients = new Ingredient(1, "pasta", 200, 1.59f);
         System.out.println(listingredients.getIngredient());
 
     }
