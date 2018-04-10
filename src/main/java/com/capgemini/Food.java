@@ -9,14 +9,14 @@ public class Food {
 
 
     //constructor that initialises a food wih a single ingredient (simpler version)
-    public void Food(int foodId, String foodName, Ingredient singleIngredient){
+    public Food(int foodId, String foodName, Ingredient singleIngredient){
         this.foodId = foodId;
         this.foodName = foodName;
         this.singleIngredient = singleIngredient;
     }
 
     //constructor that initializes a food with a list of ingredients (more advanced)
-    public void Food(int foodId, String foodName, Ingredient[] ingredient){
+    public Food(int foodId, String foodName, Ingredient[] ingredient){
         this.foodId = foodId;
         this.foodName = foodName;
         this.ingredient= ingredient;

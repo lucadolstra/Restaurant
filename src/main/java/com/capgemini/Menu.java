@@ -7,7 +7,4 @@ public class Menu {
     private Food[] food;
     private Food singleFood;
 
-
-
-
 }
