@@ -15,7 +15,7 @@ public class Ingredient {
     }
 
     //get an ingredient
-    public String getIngredient() {
+    public String getIngredient() { 
         return ingredientId + " " + ingredientName;
     }
 
