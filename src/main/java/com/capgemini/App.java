@@ -14,7 +14,7 @@ public class App {
         System.out.println("***Menu****");
         System.out.println();
 
-        Drink drink = new Drink(1, EMenuItem.Drink, "beer", 2);
+        Drink drink = new Drink(1, EMenuItem.Drink, "Carlsberg", 2);
         drink.printMenuItem();
 
 

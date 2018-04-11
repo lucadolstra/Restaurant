@@ -54,7 +54,7 @@ public class MenuItem {
 
 
     public void printMenuItem() {
-        System.out.println("Id:" + getId() + "Type: " + getItem() + " Name: " + getName() + " price: " + getPrice());
+        System.out.println("Id:" + getId() + " Type:" + getItem() + " Name:" + getName() + " Price:" + getPrice());
     }
 
 
