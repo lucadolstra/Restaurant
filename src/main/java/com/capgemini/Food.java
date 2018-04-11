@@ -3,20 +3,20 @@ package com.capgemini;
 public class Food {
 
     private int foodId;
-    private String foodName;
+    private EFood foodName;
     private Ingredient[] ingredient;        //every food has a list of ingredients
     private Ingredient singleIngredient;
 
 
     //constructor that initialises a food wih a single ingredient (simpler version)
-    public Food(int foodId, String foodName, Ingredient singleIngredient){
+    public Food(int foodId, EFood foodName, Ingredient singleIngredient){
         this.foodId = foodId;
         this.foodName = foodName;
         this.singleIngredient = singleIngredient;
     }
 
     //constructor that initializes a food with a list of ingredients (more advanced)
-    public Food(int foodId, String foodName, Ingredient[] ingredient){
+    public Food(int foodId, EFood foodName, Ingredient[] ingredient){
         this.foodId = foodId;
         this.foodName = foodName;
         this.ingredient= ingredient;
@@ -33,11 +33,11 @@ public class Food {
         return foodId;
     }
 
-    public void setFoodName(String setFoodName){
+    public void setFoodName(EFood setFoodName){
         this.foodName = foodName;
     }
 
-    public String getFoodName(){
+    public EFood getFoodName(){
         return foodName;
     }
 
