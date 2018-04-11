@@ -1,7 +1,8 @@
 package com.capgemini;
 
-public enum EFood {
+public enum EMenuItem {
     Starter,
     Main,
-    Desert;
+    Drink,
+    Desert
 }

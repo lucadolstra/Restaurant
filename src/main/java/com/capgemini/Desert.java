@@ -2,18 +2,17 @@ package com.capgemini;
 
 public class Desert {
 
-    private EDesert desertName;
+    private String desertName;
     private int desertID;
     private double price;
 
-    public Desert (EDesert newName, int newStarterID, double newPrice)
-    {
+    public Desert(String newName, int newStarterID, double newPrice) {
         this.desertName = newName;
         this.desertID = newStarterID;
-        this.price  = newPrice;
+        this.price = newPrice;
     }
 
-    public EDesert getDesertName() {
+    public String getDesertName() {
         return this.desertName;
     }
 
