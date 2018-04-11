@@ -14,11 +14,31 @@ public class Ingredient {
         this.ingredientPrice = ingredientPrice;
     }
 
-
     //get an ingredient
     public String getIngredient() {
         return ingredientId + " " + ingredientName;
     }
+
+
+    //getters and setters
+
+    public void setIngredientId(int ingredientId) {
+        this.ingredientId = ingredientId;
+    }
+
+    public void setIngredientName(String ingredientName) {
+        this.ingredientName = ingredientName;
+    }
+
+    public void setIngredientGrams(int ingredientGrams) {
+        this.ingredientGrams = ingredientGrams;
+    }
+
+    public void setIngredientPrice(double ingredientPrice) {
+        this.ingredientPrice = ingredientPrice;
+    }
+
+
 
     public int getIngredientId() {
         return ingredientId;

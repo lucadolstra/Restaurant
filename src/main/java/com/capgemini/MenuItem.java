@@ -2,6 +2,8 @@ package com.capgemini;
 
 public class MenuItem {
 
+    //Parent class for Food and Drink
+
 
     private int id;
     private EMenuItem item;
