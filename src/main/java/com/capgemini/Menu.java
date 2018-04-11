@@ -10,7 +10,6 @@ public class Menu {
     private Drink singleDrink;
 
 
-
     //Constructors
 
     //with list of food and drinks

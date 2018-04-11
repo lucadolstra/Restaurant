@@ -15,12 +15,12 @@ public class App
 
     public static void main( String[] args )
     {
-        Ingredient ingredient1 = new Ingredient(1, "pasta", 200, 1.59f);
+        Ingredient ingredient1 = new Ingredient(EIngredient.Basil, 15, 200, 1.59f);
         //System.out.println(ingredient1.getIngredient());
 
-        Food food1 = new Food(1, "pastadish", ingredient1);
+        Food food1 = new Food(1,EFood.Kebap, EIngredient.Pepper);
 
-        Drink drink1 = new Drink(1, "vodka");
+        Drink drink1 = new Drink(14, EDrink.Beer);
 
         Menu menu = new Menu(1, "pagaplus Restaurant", food1, drink1);
 

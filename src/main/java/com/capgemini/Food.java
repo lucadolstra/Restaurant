@@ -4,57 +4,42 @@ public class Food {
 
     private int foodId;
     private EFood foodName;
-    private Ingredient[] ingredient;        //every food has a list of ingredients
-    private Ingredient singleIngredient;
+    private EIngredient ingredientName;        //every food has a list of ingredients
 
 
     //constructor that initialises a food wih a single ingredient (simpler version)
-    public Food(int foodId, EFood foodName, Ingredient singleIngredient){
+    public Food(int foodId, EFood foodName, EIngredient ingredientName) {
         this.foodId = foodId;
         this.foodName = foodName;
-        this.singleIngredient = singleIngredient;
-    }
-
-    //constructor that initializes a food with a list of ingredients (more advanced)
-    public Food(int foodId, EFood foodName, Ingredient[] ingredient){
-        this.foodId = foodId;
-        this.foodName = foodName;
-        this.ingredient= ingredient;
+        this.ingredientName = ingredientName;
     }
 
 
     //Getters and setters for Food
 
-    public void setFoodId(int foodId){
-        this.foodId = foodId;
+    //public void setFoodId(int foodId) {
+    //    this.foodId = foodId;
+    //}
+
+    public int getFoodId() {
+        return this.foodId;
     }
 
-    public int getFoodId(){
-        return foodId;
+    //public void setFoodName(EFood setFoodName) {
+    //    this.foodName = foodName;
+    //}
+
+    public EFood getFoodName() {
+        return this.foodName;
     }
 
-    public void setFoodName(EFood setFoodName){
-        this.foodName = foodName;
+    //TODO: change this to make a list using a loop
+    //public void setIngredient(EIngredient ingredientName) {
+    //    this.ingredientName = ingredientName;
+    //}
+
+    public EIngredient getIngredient() {
+        return this.ingredientName;
     }
 
-    public EFood getFoodName(){
-        return foodName;
-    }
-
-   //TODO: change this to make a list using a loop
-    public void setIngredient(Ingredient[] ingredient){
-        this.ingredient = ingredient;
-    }
-
-    public Ingredient[] getIngredient(){
-        return ingredient;
-    }
-
-    public void setSingleIngredient(Ingredient singleIngredient){
-        this.singleIngredient = singleIngredient;
-    }
-
-    public Ingredient getSingleIngredient(){
-        return singleIngredient;
-    }
 }

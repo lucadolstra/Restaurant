@@ -11,4 +11,16 @@ public class Starter {
         this.starterID = newStarterID;
         this.price  = newPrice;
     }
+
+    public EStarter getStarterName() {
+        return this.starterName;
+    }
+
+    public int getStarterID() {
+        return this.starterID;
+    }
+
+    public double getPrice() {
+        return this.price;
+    }
 }

@@ -12,4 +12,16 @@ public class Desert {
         this.desertID = newStarterID;
         this.price  = newPrice;
     }
+
+    public EDesert getDesertName() {
+        return this.desertName;
+    }
+
+    public int getDesertID() {
+        return this.desertID;
+    }
+
+    public double getPrice() {
+        return this.price;
+    }
 }
