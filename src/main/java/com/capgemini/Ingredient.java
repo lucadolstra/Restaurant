@@ -22,19 +22,23 @@ public class Ingredient {
         return ingredientId + " " + ingredientName;
     }
 
+
+    // getters and setters
+
     // carlijn
-    public void setIngredientId (int i) {
-        if (i > 0) {
-            this.ingredientId = i;
-        }
+    // update by luca: changed names of local variables
+    public void setIngredientId (int ingredientId) {
+            this.ingredientId = ingredientId;
     }
 
     public int getIngredientId() {
         return ingredientId ;
     }
-    public void setIngredientName (String str) {
-        if(str != null && !str.isEmpty()) {
-            this.ingredientName = str;
+
+    //Luca: change if to a catch - try
+    public void setIngredientName (String ingredientName) {
+        if(ingredientName != null && !ingredientName.isEmpty()) {
+            this.ingredientName = ingredientName;
         }
     }
 
@@ -42,9 +46,10 @@ public class Ingredient {
         return ingredientName ;
     }
 
-    public void setIngredientGrams (int i) {
-        if (i > 0) {
-            this.ingredientGrams = i;
+    //TODO: luca : change if statement to Try Catch
+    public void setIngredientGrams (int ingredientGrams) {
+        if (ingredientGrams > 0) {
+            this.ingredientGrams = ingredientGrams;
         }
     }
 
@@ -52,9 +57,9 @@ public class Ingredient {
         return ingredientGrams ;
     }
 
-    public void setIngredientPrice (float i) {
-        if (i > 0) {
-            this.ingredientPrice = i;
+    public void setIngredientPrice (float ingredientPrice) {
+        if (ingredientPrice > 0) {
+            this.ingredientPrice = ingredientPrice;
         }
     }
 

@@ -4,8 +4,7 @@ public class Drink {
 
     private int drinkId;
     private String drinkName;
-    private Drink[] drink;
-    private Drink singleDrink;
+
 
     //Constructor that makes sure we add an id and a name for every drink we make
 
@@ -14,8 +13,24 @@ public class Drink {
         this.drinkName = drinkName;
     }
 
-    //get an drink
-    public String getDrinkName() {
-        return drinkId + " " + drinkName;
+
+    //Setters and Getters
+
+    public void setDrinkId(int drinkId){
+        this.drinkId = drinkId;
     }
+
+    public int getDrinkId(){
+        return drinkId;
+    }
+
+
+    public void setDrinkName(String drinkName){
+        this.drinkName = drinkName;
+    }
+
+    public String getDrinkName(){
+        return drinkName;
+    }
+
 }

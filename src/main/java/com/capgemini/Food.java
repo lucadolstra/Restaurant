@@ -23,6 +23,38 @@ public class Food {
     }
 
 
-    //todo: create a get function getFood, where we create a food, just like in Ingredients.
-    //however: here we want an array of inredients as well. Use a loop for this.
+    //Getters and setters for Food
+
+    public void setFoodId(int foodId){
+        this.foodId = foodId;
+    }
+
+    public int getFoodId(){
+        return foodId;
+    }
+
+    public void setFoodName(String setFoodName){
+        this.foodName = foodName;
+    }
+
+    public String getFoodName(){
+        return foodName;
+    }
+
+   //TODO: change this to make a list using a loop
+    public void setIngredient(Ingredient[] ingredient){
+        this.ingredient = ingredient;
+    }
+
+    public Ingredient[] getIngredient(){
+        return ingredient;
+    }
+
+    public void setSingleIngredient(Ingredient singleIngredient){
+        this.singleIngredient = singleIngredient;
+    }
+
+    public Ingredient getSingleIngredient(){
+        return singleIngredient;
+    }
 }

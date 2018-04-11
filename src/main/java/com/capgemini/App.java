@@ -6,6 +6,7 @@ Restaurant application
 
 public class App
 {
+    private Menu menu;
 
     //right now, we print ingredients.
     //todo redo the structure: Menu has a Food, a Food has Ingredients.
