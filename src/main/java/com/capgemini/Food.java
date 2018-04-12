@@ -4,36 +4,33 @@ public class Food extends MenuItem {
 
     //Food inherits from MenuItem, but also has an Ingredient or a list of Ingredients.
 
-    private Ingredient[] listOfIngredients;
+    private EIngredient[] listOfIngredients;
 
-    public Food(int newId, EMenuItem newItem, String newName, double newPrice, Ingredient[] newListOfIngredients) {
+
+    public Food(int newId, EMenuItem newItem, String newName, double newPrice, EIngredient[] newListOfIngredients) {
         super(newId, newItem, newName, newPrice);
         this.listOfIngredients = newListOfIngredients;
     }
 
-    public Food(int newId, EMenuItem newItem, String newName, double newPrice, Ingredient newIngredient) {
-        super(newId, newItem, newName, newPrice);
 
-        // maak een Ingredient array aan met size 1
-        Ingredient[] ingredients = new Ingredient[1];
+    public EIngredient[] getListOfIngredients() {
+        return listOfIngredients;
+}
 
-        // voeg het ingredient toe aan de nieuwe array
-        ingredients[0] = newIngredient;
-
-        // set de array op this.listOfIngredients
-        this.listOfIngredients = ingredients;
+    public void setListOfIngredients(EIngredient[] listOfIngredients) {
+        this.listOfIngredients = listOfIngredients;
     }
 
-
     public void printListOfIngredients() {
-        for (Ingredient currentIngredient : this.listOfIngredients ) {
-            System.out.println(currentIngredient.getIngredientName());
+        System.out.println("Ingredients: ");
+        for (EIngredient currentIngredient : this.listOfIngredients ) {
+            System.out.println(currentIngredient);
         }
     }
 
     @Override
     public void printMenuItem() {
-        super.printMenuItem();
+        //super.printMenuItem();
         printListOfIngredients();
     }
 
