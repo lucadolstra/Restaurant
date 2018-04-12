@@ -3,11 +3,11 @@ package com.capgemini;
 public class Ingredient {
 
     private int ingredientId;
-    private EIngredient ingredientName;
+    private String ingredientName;
     private int ingredientGrams;
     private double ingredientPrice;
 
-    public Ingredient(EIngredient ingredientName, int ingredientId, int ingredientGrams, double ingredientPrice) {
+    public Ingredient(int ingredientId, String ingredientName, int ingredientGrams, double ingredientPrice) {
         this.ingredientId = ingredientId;
         this.ingredientName = ingredientName;
         this.ingredientGrams = ingredientGrams;
@@ -31,11 +31,11 @@ public class Ingredient {
         this.ingredientId = ingredientId;
     }
 
-    public EIngredient getIngredientName() {
+    public String getIngredientName() {
         return ingredientName;
     }
 
-    public void setIngredientName(EIngredient ingredientName) {
+    public void setIngredientName(String ingredientName) {
         this.ingredientName = ingredientName;
     }
 

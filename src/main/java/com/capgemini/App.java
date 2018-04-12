@@ -4,25 +4,24 @@ package com.capgemini;
 Restaurant application
 */
 
-import java.sql.SQLOutput;
-import java.util.ArrayList;
-import java.util.List;
-
 public class App {
 
     //instantiates a Drink and a Food
 
     public static void main(String[] args) {
 
+        Ingredient garlic = new Ingredient(1,"garlic", 100, 2);
+        Ingredient salt = new Ingredient(2, "salt", 22, 1);
+        Ingredient oil = new Ingredient(3, "oil", 78, 3);
+        Ingredient cream = new Ingredient(4, "cream", 1500, 55);
 
-        MenuItem soup = new Food(1, EMenuItem.Starter, "soup", 2, new EIngredient[] {EIngredient.Garlic});
-        MenuItem dish = new Food(2, EMenuItem.Main, "more soup", 3, new EIngredient[] {EIngredient.Love});
-        MenuItem tiramisu = new Food(3, EMenuItem.Desert, "tiramisu", 8, new EIngredient[]{EIngredient.Cream, EIngredient.Cringe});
+
+        MenuItem soup = new Food(1, EMenuItem.Starter, "soup", 2, new Ingredient[] {garlic, salt});
+        MenuItem pizza = new Food(2, EMenuItem.Main, "pizza", 3, new Ingredient[] {cream});
+        MenuItem tiramisu = new Food(3, EMenuItem.Desert, "tiramisu", 8, new Ingredient[]{garlic, oil, cream});
         MenuItem water = new Drink(4, EMenuItem.Drink, "water", 2);
 
-       // MenuItem[] menuItems = new MenuItem[] {soup, dish, tiramisu, water} ;
-
-        Menu menu = new Menu(new MenuItem[] {soup, dish, tiramisu, water});
+        Menu menu = new Menu(new MenuItem[] {soup, pizza, tiramisu, water});
 
         System.out.println("***Menu****");
         System.out.println();
