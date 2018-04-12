@@ -23,7 +23,8 @@ public class Menu {
     }
 
 
-    //Method to print the menu, for every item in 
+    //Method to print the menu, for every item in the list, it checks whether what kind of dish it is, and prints
+    //the required information accordingly
     public void printMenuItemList() {
         for (MenuItem currentMenuItem : menuItemList){
             if(currentMenuItem instanceof Food && currentMenuItem.getItem() == EMenuItem.Starter) {
