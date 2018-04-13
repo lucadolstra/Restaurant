@@ -1,8 +1,9 @@
 package com.capgemini;
 
-public class MenuItem {
+public abstract class MenuItem {
 
     //Parent class for Food and Drink
+    //is abstract because a MenuItem is never instantiated in reality
 
 
     private int id;

@@ -53,7 +53,7 @@ public class Menu {
                 System.out.println();
             }
             else{
-                System.out.println("nothing");
+                System.out.println("Error: this item is not part of the Menu");
             }
         }
         }
