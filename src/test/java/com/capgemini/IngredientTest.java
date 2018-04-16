@@ -1,8 +1,8 @@
 package com.capgemini;
+import org.junit.*;
 
-
-import org.junit.BeforeClass;
-import org.junit.Test;
+//import org.junit.BeforeClass;
+//import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;
 
