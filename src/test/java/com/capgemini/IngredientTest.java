@@ -9,6 +9,11 @@ import static junit.framework.TestCase.assertEquals;
 public class IngredientTest {
     static Ingredient testIngredient;
 
+    int expectedId = 1;
+    String expectedName = "Test";
+    int expectedGrams = 50;
+    double expectedPrice = 1;
+
     //Basic test to see if JUnit is working
     @Test
     public void jUnitWorksTest() {
@@ -31,15 +36,11 @@ public class IngredientTest {
         int testGrams = testIngredient.getIngredientGrams();
         double testPrice = testIngredient.getIngredientPrice();
 
-        int expectedId = 1;
-        String expectedName = "Test";
-        int expectedGrams = 50;
-        double expectedPrice = 1;
-
         assertEquals(testId, expectedId);
         assertEquals(testName, expectedName);
         assertEquals(testGrams, expectedGrams);
         assertEquals(testPrice, expectedPrice);
-
     }
+
+
 }
