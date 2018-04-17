@@ -6,36 +6,28 @@ public class Table {
 
     private int tableId;
     private int numberOfPeople;
+    private Menu menu;
+    private Order[] orderList;
     private MenuItem[] menuItemList;
-    //private Order[] listOforders;
+    private Order order;
 
-    public Table(int tableId, int numberOfPeople, MenuItem[] menuItemList){
+    public Table(int tableId, int numberOfPeople) {
         this.tableId = tableId;
         this.numberOfPeople = numberOfPeople;
-        this.menuItemList = menuItemList;
     }
 
     // method for add reservation
 
     // method for calculating total price
 
-    // method for showing menu
-
-    public void printMenu(MenuItem[] menuItemList){
-        Menu newMenu = new Menu(menuItemList);
-        newMenu.printMenuItemList();
-    }
-
     // method for paying order. 
 
     // method for placing order. When placing an order we will need the table ID of the table,
     // an order list is needed from the order class
-//    public void placeOrder(int tableId, Order[] orderList) {
-//        this.tableId = tableId;
-//        orderList.getId;
-//    }
+    public void placeOrder(OrderController orderController) {
+        orderController.printOrderList();
 
-
+    }
 
     public int getTableId() {
         return tableId;

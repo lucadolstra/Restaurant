@@ -42,15 +42,20 @@ public class App {
         //Instantiates a menu
         Menu menu = new Menu(new MenuItem[] {soup, pizza, tiramisu, water});
 
+
         // A menu is created with a list of menu items, you need to add menu items after the MenuItem[]
 
         System.out.println("***Menu****");
         System.out.println();
 
         // The menu is printed here. See Class menu for all details.
-        menu.printMenuItemList();
+        // menu.printMenuItemList();
 
 
+
+        //instantiate an table
+
+        Table table = new Table(1,4);
 
 
         //Instatiate an order
@@ -63,12 +68,17 @@ public class App {
 
         Order[] orderList = {order1, order2};
 
+
+
         System.out.println("**Order****");
         System.out.println("");
 
-        OrderController orderController = new OrderController(orderList);
 
-        orderController.printOrderList();
+       OrderController orderController = new OrderController(orderList);
+//
+//        orderController.printOrderList();
+
+        table.placeOrder(orderController);
 
 
 
