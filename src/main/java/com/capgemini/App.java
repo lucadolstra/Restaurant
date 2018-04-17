@@ -28,7 +28,7 @@ public class App {
 
         //Menu is instantiated with a id, an ENum, name, price and Ingredients array
 
-        MenuItem soup = new Food(1, EMenuItem.Starter, "soup", 0.47, new Ingredient[] {garlic});
+        MenuItem soup = new Food(1, EMenuItem.Starter, "soup", 10, new Ingredient[] {garlic});
         MenuItem pizza = new Food(2, EMenuItem.Main, "pizza", 3, new Ingredient[] {dough});
         MenuItem tiramisu = new Food(3, EMenuItem.Desert, "tiramisu", 8, new Ingredient[]{sugar, oil, cream});
         MenuItem water = new Drink(4, EMenuItem.Drink, "water", 2);
@@ -44,31 +44,55 @@ public class App {
 
         // A menu is created with a list of menu items, you need to add menu items after the MenuItem[]
 
-        System.out.println("***Menu****");
-        System.out.println();
-
-        // The menu is printed here. See Class menu for all details.
-        menu.printMenuItemList();
+//        System.out.println("***Menu****");
+//        System.out.println();
+//
+//        // The menu is printed here. See Class menu for all details.
+//        menu.printMenuItemList();
 
 
 
 
         //Instatiate an order
 
-        MenuItem[] orderMenuItems1 = {soup, lasagna, burger};
+        MenuItem[] orderMenuItems1 = {soup, lasagna};
         MenuItem[] orderMenuItems2 = {water, beer, fragolo};
 
-        Order order1 = new  Order(6, orderMenuItems1, 10, 2);
-        Order order2 = new Order(7, orderMenuItems2, 20, 2);
+        System.out.println("price of soup:");
+        System.out.println(soup.getPrice());
+        System.out.println("price of lasgna: ");
+        System.out.println(lasagna.getPrice());
+
+        Order order1 = new  Order(6, orderMenuItems1, 2);
+        Order order2 = new Order(7, orderMenuItems2,  2);
+       // Order order3 = new Order(9, orderMenuItems1,  3);
+
+        System.out.println("Order Price of order 1:");
+        order1.printOrderPrice();
+
+        System.out.println("Order Price of order 2:");
+        order2.printOrderPrice();
 
         Order[] orderList = {order1, order2};
+      //  Order[] orderList1 = {order3};
 
-        System.out.println("**Order****");
+        OrderController orderController = new OrderController(orderList, 2);
+
+
+        System.out.println("Order Price of 2 orders:");
+        orderController.calcTotalOrderPrice();
+        orderController.printOrderTotalPrice();
+
+
+        System.out.println("**Order for table " + orderController.getTableId());
         System.out.println("");
-
-        OrderController orderController = new OrderController(orderList);
-
         orderController.printOrderList();
+
+//        System.out.println();
+//
+//        OrderController orderController1 = new OrderController(orderList1, 3);
+//        System.out.println("");
+//        orderController.printOrderList();
 
 
 
