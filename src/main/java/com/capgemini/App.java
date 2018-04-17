@@ -4,6 +4,10 @@ package com.capgemini;
 Restaurant application
 */
 
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
+
+import java.sql.SQLOutput;
+
 public class App {
 
     //instantiates a Drink and a Food
@@ -45,6 +49,26 @@ public class App {
 
         // The menu is printed here. See Class menu for all details.
         menu.printMenuItemList();
+
+
+
+
+        //Instatiate an order
+
+        MenuItem[] orderMenuItems1 = {soup, lasagna, burger};
+        MenuItem[] orderMenuItems2 = {water, beer, fragolo};
+
+        Order order1 = new  Order(6, orderMenuItems1, 10, 2);
+        Order order2 = new Order(7, orderMenuItems2, 20, 2);
+
+        Order[] orderList = {order1, order2};
+
+        System.out.println("**Order****");
+        System.out.println("");
+
+        OrderController orderController = new OrderController(orderList);
+
+        orderController.printOrderList();
 
 
 
