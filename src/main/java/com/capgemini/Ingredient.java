@@ -14,10 +14,10 @@ public class Ingredient {
         this.ingredientPrice = ingredientPrice;
     }
 
-    //get an ingredient
-    public String getIngredient() {
-        return ingredientId + " " + ingredientName;
-    }
+//    //get an ingredient
+//    public String getIngredient() {
+//        return ingredientId + " " + ingredientName;
+//    }
 
 
     //getters and setters

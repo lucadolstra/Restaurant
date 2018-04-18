@@ -18,13 +18,12 @@ public class OrderController {
 
 
 
-    //method to print the order
-    public void printOrderList(){
-        for(Order currentOrder : orderList){
-            System.out.println("id: " + currentOrder.getOrderId() + "order: ");
-            currentOrder.printOrder();
-            System.out.println( "orderprice: " + currentOrder.getOrderPrice() + "for table: " + currentOrder.getTableId());
-        }
-    }
+        MenuItem[] orderMenuItems1 = {soup, lasagna, burger};
+        MenuItem[] orderMenuItems2 = {water, beer, fragolo};
+
+        Order order1 = new  Order(6, orderMenuItems1, 10, 2);
+        Order order2 = new Order(7, orderMenuItems2, 20, 2);
+
+        Order[] orderList = {order1, order2};
 
 }

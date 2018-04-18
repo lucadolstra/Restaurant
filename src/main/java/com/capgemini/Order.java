@@ -50,11 +50,7 @@ public class Order {
         this.tableId = tableId;
     }
 
-   public void printOrder(){
-        for (MenuItem currentItem : menuItemList){
-            System.out.println(currentItem.getName());
-        }
-   }
+
 
 
 

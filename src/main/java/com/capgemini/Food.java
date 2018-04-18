@@ -12,7 +12,6 @@ public class Food extends MenuItem {
         this.listOfIngredients = newListOfIngredients;
     }
 
-
     public Ingredient[] getListOfIngredients() {
         return listOfIngredients;
 }
@@ -22,21 +21,6 @@ public class Food extends MenuItem {
     }
 
 
-    //method to print the list of ingredients that belong to a food
-    public void printListOfIngredients() {
-        System.out.println("Ingredients: ");
-        for (Ingredient currentIngredient : this.listOfIngredients ) {
-            System.out.println(currentIngredient.getIngredientName());
-        }
-    }
-
     //the printMenuItem from the MenuItem class, including the method for printing the list of ingredients
-
-    @Override
-    public void printMenuItem() {
-        super.printMenuItem();
-        printListOfIngredients();
-    }
-
 
 }
