@@ -18,9 +18,11 @@ public class App {
 //        ing.printIngredient();
 //        ing.printListOfIngredients();
 
-        MenuItemController menuItem = new MenuItemController();
-//        menu.printSingleMenuItem();
-        menuItem.printMenuItem();
+//        MenuItemController menuItem = new MenuItemController();
+//        menuItem.printMenuItem();
+
+        OrderController orderController = new OrderController();
+        orderController.printOrder();
 
 
 //

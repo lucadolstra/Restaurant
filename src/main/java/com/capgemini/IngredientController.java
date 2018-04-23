@@ -8,11 +8,11 @@ public class IngredientController {
     private IngredientView ingredientView = new IngredientView();
     private Ingredient ingredient;
     //private Ingredient[] listOfIngredients;
-    private Ingredient [] listOfIngredients;
+    private Ingredient[] listOfIngredients;
 
 
     public IngredientController() {
-        ingredient = new Ingredient(1,"garlic", 100, 2);
+        ingredient = new Ingredient(1, "garlic", 100, 2);
         Ingredient salt = new Ingredient(2, "salt", 22, 1);
         Ingredient oil = new Ingredient(3, "oil", 78, 3);
         Ingredient cream = new Ingredient(4, "cream", 60, 55);
@@ -45,14 +45,14 @@ public class IngredientController {
         this.listOfIngredients = listOfIngredients;
     }
 
-    public void printIngredient(){
+    public void printIngredient() {
         ingredientView.printSingleIngredient(ingredient);
     }
 
-    public  void printListOfIngredients(){
+    public void printListOfIngredients() {
         ingredientView.printListOfIngredients(listOfIngredients);
     }
-    }
+}
 
 
 

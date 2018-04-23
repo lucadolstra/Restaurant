@@ -25,8 +25,6 @@ public class MenuItemController {
        listOfMenuItems = new MenuItem[2];
        listOfMenuItems[0] = menuItem;
        listOfMenuItems[1] = pizza;
-
-
    }
 
 
@@ -40,6 +38,28 @@ public class MenuItemController {
 
         }
 
+    public MenuItemView getMenuItemView() {
+        return menuItemView;
+    }
 
+    public void setMenuItemView(MenuItemView menuItemView) {
+        this.menuItemView = menuItemView;
+    }
+
+    public IngredientController getIng() {
+        return ing;
+    }
+
+    public void setIng(IngredientController ing) {
+        this.ing = ing;
+    }
+
+    public MenuItem[] getListOfMenuItems() {
+        return listOfMenuItems;
+    }
+
+    public void setListOfMenuItems(MenuItem[] listOfMenuItems) {
+        this.listOfMenuItems = listOfMenuItems;
+    }
 }
 
