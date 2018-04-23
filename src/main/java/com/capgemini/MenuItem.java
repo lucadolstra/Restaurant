@@ -56,4 +56,8 @@ public abstract class MenuItem {
     }
 
 
+    public void printMenuItem() {
+        System.out.println("Dish: " + getName() + "      Price:" + getPrice());
+    }
+
 }
