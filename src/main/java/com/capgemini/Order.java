@@ -6,7 +6,7 @@ public class Order {
 
     private int orderId;
     private MenuItem[] menuItemList;
-    private double orderPrice = 0;
+    private double orderPrice;
     //private Table tableId;
     private int tableId;
 
@@ -15,7 +15,6 @@ public class Order {
     public Order(int orderId, MenuItem[] menuItemList, int tableId) {
         this.orderId = orderId;
         this.menuItemList = menuItemList;
-
         this.tableId = tableId;
     }
 
@@ -54,7 +53,7 @@ public class Order {
         for (MenuItem currentItem : menuItemList) {
             if (currentItem instanceof Food) {
                 Food tempFood = (Food) currentItem;
-                orderPrice = tempFood.getPrice() + orderPrice;
+                orderPrice = tempFood.getPrice()+orderPrice;
             }
             if (currentItem instanceof Drink) {
                 Drink temDrink = (Drink) currentItem;
@@ -65,18 +64,15 @@ public class Order {
     }
 
 
-    public void printOrderPrice(){
-        System.out.println(orderPrice);
-    }
 
     public void printOrder() {
         for (MenuItem currentItem : menuItemList) {
-            System.out.println("seperate order: ");
             System.out.println(currentItem.getName());
-            System.out.println();
-            printOrderPrice();
+            System.out.println("Price: " + currentItem.getPrice());
         }
     }
 
-
+    public double getOrderPrice() {
+        return orderPrice;
+    }
 }

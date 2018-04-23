@@ -38,15 +38,13 @@ public class OrderController {
     //Before I had the OrderPrice be calculated out of the prices of the MenuItems, but had them hardcoded
     //this calculator, that takes all the orders together DID work!!!
     public double calcTotalOrderPrice(){
+        totalOrderPrice = 0;
         for(Order currentOrder : orderList){
-            totalOrderPrice = totalOrderPrice + currentOrder.calculateOrderPrice();
+            totalOrderPrice = totalOrderPrice + currentOrder.getOrderPrice();
             }
             return totalOrderPrice;
     }
 
-    public void printOrderTotalPrice(){
-        System.out.println(totalOrderPrice);
-    }
 
 
     //method to print the order
@@ -56,13 +54,14 @@ public class OrderController {
         for (Order currentOrder : orderList) {
 
                 System.out.println();
-                System.out.println("id: " + currentOrder.getOrderId());
-                System.out.println("order: ");
+//              System.out.println("id: " + currentOrder.getOrderId());
+                System.out.print("order: ");
                 currentOrder.printOrder();
-                System.out.println("Total order price: " + calcTotalOrderPrice());
-                System.out.println("for table" + currentOrder.getTableId());
-
+                System.out.println("The price of this order: " + currentOrder.getOrderPrice());
+//                System.out.println("The total order price: " + calcTotalOrderPrice());
             }
+        System.out.println("-----------");
+        System.out.println("The total order price: " + calcTotalOrderPrice());
         }
 
     }

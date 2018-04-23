@@ -58,20 +58,13 @@ public class App {
         MenuItem[] orderMenuItems1 = {soup, lasagna};
         MenuItem[] orderMenuItems2 = {water, beer, fragolo};
 
-        System.out.println("price of soup:");
-        System.out.println(soup.getPrice());
-        System.out.println("price of lasgna: ");
-        System.out.println(lasagna.getPrice());
 
-        Order order1 = new  Order(6, orderMenuItems1, 2);
+        Order order1 = new Order(6, orderMenuItems1, 2);
         Order order2 = new Order(7, orderMenuItems2,  2);
        // Order order3 = new Order(9, orderMenuItems1,  3);
 
-        System.out.println("Order Price of order 1:");
-        order1.printOrderPrice();
-
-        System.out.println("Order Price of order 2:");
-        order2.printOrderPrice();
+        order1.calculateOrderPrice();
+        order2.calculateOrderPrice();
 
         Order[] orderList = {order1, order2};
       //  Order[] orderList1 = {order3};
@@ -79,20 +72,12 @@ public class App {
         OrderController orderController = new OrderController(orderList, 2);
 
 
-        System.out.println("Order Price of 2 orders:");
-        orderController.calcTotalOrderPrice();
-        orderController.printOrderTotalPrice();
 
 
         System.out.println("**Order for table " + orderController.getTableId());
-        System.out.println("");
         orderController.printOrderList();
 
-//        System.out.println();
-//
-//        OrderController orderController1 = new OrderController(orderList1, 3);
-//        System.out.println("");
-//        orderController.printOrderList();
+
 
 
 
