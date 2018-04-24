@@ -3,6 +3,7 @@ package com.capgemini;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
+import com.capgemini.model.*;
 import org.junit.Test;
 
 /**

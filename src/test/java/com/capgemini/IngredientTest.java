@@ -1,4 +1,5 @@
 package com.capgemini;
+import com.capgemini.model.Ingredient;
 import org.junit.*;
 
 //import org.junit.BeforeClass;

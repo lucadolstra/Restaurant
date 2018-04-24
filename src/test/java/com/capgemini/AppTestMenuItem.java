@@ -2,6 +2,7 @@ package com.capgemini;
 
 import static junit.framework.TestCase.assertEquals;
 
+import com.capgemini.model.*;
 import org.junit.Test;
 
 public class AppTestMenuItem {
